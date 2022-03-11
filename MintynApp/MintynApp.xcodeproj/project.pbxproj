@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9E43F72F554DBF4BCE8685 /* Pods_MintynApp_MintynAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3274087DC67F17743D166B40 /* Pods_MintynApp_MintynAppUITests.framework */; };
+		6B95CC6A5D919090E480633D /* Pods_MintynAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */; };
 		B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87227DBF54D0081B353 /* AppDelegate.swift */; };
 		B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87427DBF54D0081B353 /* SceneDelegate.swift */; };
 		B46CB87727DBF54D0081B353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87627DBF54D0081B353 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		B46CB88A27DBF5560081B353 /* MintynAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB88927DBF5560081B353 /* MintynAppTests.swift */; };
 		B46CB89427DBF5570081B353 /* MintynAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB89327DBF5570081B353 /* MintynAppUITests.swift */; };
 		B46CB89627DBF5570081B353 /* MintynAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */; };
+		B46CB8A327DBFCDC0081B353 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */; };
+		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141C7D64C0F54CE74A0E80C6 /* Pods-MintynApp-MintynAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynApp-MintynAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MintynApp-MintynAppUITests/Pods-MintynApp-MintynAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		188C58BD35FEA045F2659C8E /* Pods-MintynApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynApp.debug.xcconfig"; path = "Target Support Files/Pods-MintynApp/Pods-MintynApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1F5E909964F95D6677C34B63 /* Pods-MintynAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynAppTests.release.xcconfig"; path = "Target Support Files/Pods-MintynAppTests/Pods-MintynAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3274087DC67F17743D166B40 /* Pods_MintynApp_MintynAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp_MintynAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB986763BC86B09193F7D64 /* Pods-MintynApp-MintynAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynApp-MintynAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MintynApp-MintynAppUITests/Pods-MintynApp-MintynAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7424FA3CDE146BD0D180BCF5 /* Pods-MintynApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynApp.release.xcconfig"; path = "Target Support Files/Pods-MintynApp/Pods-MintynApp.release.xcconfig"; sourceTree = "<group>"; };
+		762D5289D7CB2952A1F61D71 /* Pods-MintynAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MintynAppTests/Pods-MintynAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B46CB86F27DBF54D0081B353 /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB87227DBF54D0081B353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CB87427DBF54D0081B353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,8 @@
 		B46CB88F27DBF5560081B353 /* MintynAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintynAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB89327DBF5570081B353 /* MintynAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITests.swift; sourceTree = "<group>"; };
 		B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B95CC6A5D919090E480633D /* Pods_MintynAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9E43F72F554DBF4BCE8685 /* Pods_MintynApp_MintynAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84FFDCF9CA1D1BEA6DCC52BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				188C58BD35FEA045F2659C8E /* Pods-MintynApp.debug.xcconfig */,
+				7424FA3CDE146BD0D180BCF5 /* Pods-MintynApp.release.xcconfig */,
+				5DB986763BC86B09193F7D64 /* Pods-MintynApp-MintynAppUITests.debug.xcconfig */,
+				141C7D64C0F54CE74A0E80C6 /* Pods-MintynApp-MintynAppUITests.release.xcconfig */,
+				762D5289D7CB2952A1F61D71 /* Pods-MintynAppTests.debug.xcconfig */,
+				1F5E909964F95D6677C34B63 /* Pods-MintynAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		867DD75D7E6A03220921816C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */,
+				3274087DC67F17743D166B40 /* Pods_MintynApp_MintynAppUITests.framework */,
+				7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B46CB86627DBF54D0081B353 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +124,8 @@
 				B46CB88827DBF5560081B353 /* MintynAppTests */,
 				B46CB89227DBF5570081B353 /* MintynAppUITests */,
 				B46CB87027DBF54D0081B353 /* Products */,
+				84FFDCF9CA1D1BEA6DCC52BE /* Pods */,
+				867DD75D7E6A03220921816C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +142,7 @@
 		B46CB87127DBF54D0081B353 /* MintynApp */ = {
 			isa = PBXGroup;
 			children = (
+				B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */,
 				B46CB87227DBF54D0081B353 /* AppDelegate.swift */,
 				B46CB87427DBF54D0081B353 /* SceneDelegate.swift */,
 				B46CB87627DBF54D0081B353 /* ViewController.swift */,
@@ -134,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B46CB89927DBF5570081B353 /* Build configuration list for PBXNativeTarget "MintynApp" */;
 			buildPhases = (
+				03A15D0C62652B8E0FB59C55 /* [CP] Check Pods Manifest.lock */,
 				B46CB86B27DBF54D0081B353 /* Sources */,
 				B46CB86C27DBF54D0081B353 /* Frameworks */,
 				B46CB86D27DBF54D0081B353 /* Resources */,
+				6F81018040847A69B956B8EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B46CB89C27DBF5570081B353 /* Build configuration list for PBXNativeTarget "MintynAppTests" */;
 			buildPhases = (
+				95CE62BB02723F9B83F2EB02 /* [CP] Check Pods Manifest.lock */,
 				B46CB88127DBF5560081B353 /* Sources */,
 				B46CB88227DBF5560081B353 /* Frameworks */,
 				B46CB88327DBF5560081B353 /* Resources */,
@@ -169,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B46CB89F27DBF5570081B353 /* Build configuration list for PBXNativeTarget "MintynAppUITests" */;
 			buildPhases = (
+				CDBACB7981129E5EF2BC4B80 /* [CP] Check Pods Manifest.lock */,
 				B46CB88B27DBF5560081B353 /* Sources */,
 				B46CB88C27DBF5560081B353 /* Frameworks */,
 				B46CB88D27DBF5560081B353 /* Resources */,
+				1611C5B817569BCE18C45FFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46CB87F27DBF5550081B353 /* LaunchScreen.storyboard in Resources */,
+				B46CB8A327DBFCDC0081B353 /* GoogleService-Info.plist in Resources */,
 				B46CB87C27DBF5550081B353 /* Assets.xcassets in Resources */,
 				B46CB87A27DBF54D0081B353 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A15D0C62652B8E0FB59C55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MintynApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1611C5B817569BCE18C45FFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MintynApp-MintynAppUITests/Pods-MintynApp-MintynAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MintynApp-MintynAppUITests/Pods-MintynApp-MintynAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MintynApp-MintynAppUITests/Pods-MintynApp-MintynAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F81018040847A69B956B8EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MintynApp/Pods-MintynApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MintynApp/Pods-MintynApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MintynApp/Pods-MintynApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CE62BB02723F9B83F2EB02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MintynAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBACB7981129E5EF2BC4B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MintynApp-MintynAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B46CB86B27DBF54D0081B353 /* Sources */ = {
@@ -434,6 +587,7 @@
 		};
 		B46CB89A27DBF5570081B353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188C58BD35FEA045F2659C8E /* Pods-MintynApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +616,7 @@
 		};
 		B46CB89B27DBF5570081B353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7424FA3CDE146BD0D180BCF5 /* Pods-MintynApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +645,7 @@
 		};
 		B46CB89D27DBF5570081B353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762D5289D7CB2952A1F61D71 /* Pods-MintynAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +666,7 @@
 		};
 		B46CB89E27DBF5570081B353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5E909964F95D6677C34B63 /* Pods-MintynAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +687,7 @@
 		};
 		B46CB8A027DBF5570081B353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB986763BC86B09193F7D64 /* Pods-MintynApp-MintynAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +706,7 @@
 		};
 		B46CB8A127DBF5570081B353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141C7D64C0F54CE74A0E80C6 /* Pods-MintynApp-MintynAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

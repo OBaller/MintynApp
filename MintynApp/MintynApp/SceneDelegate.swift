@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MintynApp
 //
-//  Created by IBE on 11/03/2022.
+//  Created by naseem on 11/03/2022.
 //
 
 import UIKit
