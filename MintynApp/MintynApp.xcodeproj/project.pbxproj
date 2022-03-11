@@ -19,6 +19,7 @@
 		B46CB89427DBF5570081B353 /* MintynAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB89327DBF5570081B353 /* MintynAppUITests.swift */; };
 		B46CB89627DBF5570081B353 /* MintynAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */; };
 		B46CB8A327DBFCDC0081B353 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */; };
+		B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8A527DC0C8C0081B353 /* AuthManager.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		B46CB89327DBF5570081B353 /* MintynAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITests.swift; sourceTree = "<group>"; };
 		B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B46CB8A527DC0C8C0081B353 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +105,6 @@
 				762D5289D7CB2952A1F61D71 /* Pods-MintynAppTests.debug.xcconfig */,
 				1F5E909964F95D6677C34B63 /* Pods-MintynAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +143,7 @@
 		B46CB87127DBF54D0081B353 /* MintynApp */ = {
 			isa = PBXGroup;
 			children = (
+				B46CB8A427DC0C580081B353 /* Manager */,
 				B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */,
 				B46CB87227DBF54D0081B353 /* AppDelegate.swift */,
 				B46CB87427DBF54D0081B353 /* SceneDelegate.swift */,
@@ -169,6 +171,14 @@
 				B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */,
 			);
 			path = MintynAppUITests;
+			sourceTree = "<group>";
+		};
+		B46CB8A427DC0C580081B353 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B46CB8A527DC0C8C0081B353 /* AuthManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46CB87727DBF54D0081B353 /* ViewController.swift in Sources */,
+				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
 				B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */,
 				B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */,
 			);
