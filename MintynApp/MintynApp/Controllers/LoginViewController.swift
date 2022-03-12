@@ -17,10 +17,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var phoneNumberView: UIView!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordView: UIView!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: PaddedTextField!
     @IBOutlet weak var checkBox: UIButton!
     @IBOutlet weak var loginButton: UIButton!
-    
+    @IBOutlet weak var passwordToggleImage: UIButton!
+  
     private let userAuth = AuthManager()
     var toggleCheck = false
     
@@ -96,7 +97,12 @@ class LoginViewController: UIViewController {
     }
     
 
-    
+  @IBAction func passwordToggleButton(_ sender: UIButton) {
+    passwordTextField.isSecureTextEntry.toggle()
+    let imageName = passwordTextField.isSecureTextEntry ? "eye" : "eye.slash"
+    passwordToggleImage.setImage(UIImage(systemName: imageName), for: .normal)
+  }
+  
     @IBAction func markCheckBox () {
         toggleCheck.toggle()
         toggleCheck ?  checkBox.setImage(UIImage(systemName: "checkmark"), for: .normal) :  checkBox.setImage(UIImage(), for: .normal)
@@ -105,6 +111,7 @@ class LoginViewController: UIViewController {
     @IBAction func didTapLoginButton(_ sender: UIButton) {
         loginButtonTapped()
     }
+  
 }
 
 
