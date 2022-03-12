@@ -11,7 +11,7 @@
 		6B95CC6A5D919090E480633D /* Pods_MintynAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */; };
 		B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87227DBF54D0081B353 /* AppDelegate.swift */; };
 		B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87427DBF54D0081B353 /* SceneDelegate.swift */; };
-		B46CB87727DBF54D0081B353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87627DBF54D0081B353 /* ViewController.swift */; };
+		B46CB87727DBF54D0081B353 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87627DBF54D0081B353 /* WelcomeScreenViewController.swift */; };
 		B46CB87A27DBF54D0081B353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CB87827DBF54D0081B353 /* Main.storyboard */; };
 		B46CB87C27DBF5550081B353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46CB87B27DBF5550081B353 /* Assets.xcassets */; };
 		B46CB87F27DBF5550081B353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CB87D27DBF5550081B353 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		B46CB89627DBF5570081B353 /* MintynAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */; };
 		B46CB8A327DBFCDC0081B353 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */; };
 		B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8A527DC0C8C0081B353 /* AuthManager.swift */; };
+		B46CB8A927DC1ED50081B353 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8A827DC1ED50081B353 /* LoginViewController.swift */; };
+		B46CB8AB27DC1F130081B353 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8AA27DC1F130081B353 /* SignUpViewController.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,7 @@
 		B46CB86F27DBF54D0081B353 /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB87227DBF54D0081B353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CB87427DBF54D0081B353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B46CB87627DBF54D0081B353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B46CB87627DBF54D0081B353 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		B46CB87927DBF54D0081B353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B46CB87B27DBF5550081B353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46CB87E27DBF5550081B353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		B46CB89527DBF5570081B353 /* MintynAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B46CB8A527DC0C8C0081B353 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B46CB8A827DC1ED50081B353 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B46CB8AA27DC1F130081B353 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,7 +151,7 @@
 				B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */,
 				B46CB87227DBF54D0081B353 /* AppDelegate.swift */,
 				B46CB87427DBF54D0081B353 /* SceneDelegate.swift */,
-				B46CB87627DBF54D0081B353 /* ViewController.swift */,
+				B46CB8A727DC1EAE0081B353 /* Controllers */,
 				B46CB87827DBF54D0081B353 /* Main.storyboard */,
 				B46CB87B27DBF5550081B353 /* Assets.xcassets */,
 				B46CB87D27DBF5550081B353 /* LaunchScreen.storyboard */,
@@ -179,6 +183,16 @@
 				B46CB8A527DC0C8C0081B353 /* AuthManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		B46CB8A727DC1EAE0081B353 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B46CB87627DBF54D0081B353 /* WelcomeScreenViewController.swift */,
+				B46CB8A827DC1ED50081B353 /* LoginViewController.swift */,
+				B46CB8AA27DC1F130081B353 /* SignUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,9 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46CB87727DBF54D0081B353 /* ViewController.swift in Sources */,
+				B46CB8AB27DC1F130081B353 /* SignUpViewController.swift in Sources */,
+				B46CB87727DBF54D0081B353 /* WelcomeScreenViewController.swift in Sources */,
 				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
 				B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */,
+				B46CB8A927DC1ED50081B353 /* LoginViewController.swift in Sources */,
 				B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
