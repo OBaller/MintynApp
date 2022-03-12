@@ -12,7 +12,7 @@ struct ProductsCellModel {
   let image: String
 }
 
-let serviceCellModels: [ProductsCellModel] = [
+let productsCellModels: [ProductsCellModel] = [
   ProductsCellModel(title: "Mint Insurance", image: "checkerboard.shield"),
   ProductsCellModel(title: "Open an account", image: "checkerboard.shield"),
   ProductsCellModel(title: "CAC Business Registration", image: "doc.text"),

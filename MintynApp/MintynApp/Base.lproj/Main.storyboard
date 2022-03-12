@@ -90,7 +90,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="toLoginScreenTapped:" destination="e4w-0r-fp6" eventType="touchUpInside" id="0Yw-OA-nRr"/>
+                                                                    <action selector="loginButtonTapped:" destination="e4w-0r-fp6" eventType="touchUpInside" id="JW7-iq-fZ8"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouY-6i-gYb">
@@ -107,7 +107,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="toSignUpScreenTapped:" destination="e4w-0r-fp6" eventType="touchUpInside" id="Xt1-ql-kT9"/>
+                                                                    <action selector="signUpButtonTapped:" destination="e4w-0r-fp6" eventType="touchUpInside" id="hnQ-Fy-FMh"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -511,14 +511,14 @@
                     </view>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
-                        <outlet property="baseViewWrapper" destination="s1q-ZD-qBH" id="VKU-Li-rQg"/>
+                        <outlet property="baseView" destination="s1q-ZD-qBH" id="VKU-Li-rQg"/>
                         <outlet property="checkBox" destination="ORY-1w-e26" id="xO1-f1-Dl7"/>
                         <outlet property="loginButton" destination="pYo-lx-Ygr" id="6Cw-Cj-vVx"/>
-                        <outlet property="passWordTFWrapper" destination="txb-ls-4nY" id="j6R-fq-7gs"/>
-                        <outlet property="passwordTF" destination="IKr-hd-5PL" id="IqV-oo-rAI"/>
-                        <outlet property="phoneNumTF" destination="N43-Mt-0iK" id="ify-Xa-Wp1"/>
-                        <outlet property="phoneTFWrapper" destination="1dh-3B-ZRI" id="bHN-kK-AU9"/>
-                        <outlet property="serviceCollectionView" destination="LNP-xR-qUy" id="GD2-hi-x4I"/>
+                        <outlet property="passwordTextField" destination="IKr-hd-5PL" id="IqV-oo-rAI"/>
+                        <outlet property="passwordView" destination="txb-ls-4nY" id="j6R-fq-7gs"/>
+                        <outlet property="phoneNumberTextField" destination="N43-Mt-0iK" id="ify-Xa-Wp1"/>
+                        <outlet property="phoneNumberView" destination="1dh-3B-ZRI" id="bHN-kK-AU9"/>
+                        <outlet property="productsCollectionViewCell" destination="LNP-xR-qUy" id="GD2-hi-x4I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaM-D7-Fre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
