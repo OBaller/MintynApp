@@ -29,6 +29,8 @@
 		B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */; };
 		B46CB8BC27DD09EB0081B353 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */; };
 		B46CB8BE27DD0C540081B353 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8BD27DD0C540081B353 /* CreateAccountViewController.swift */; };
+		B46CB8C127DD1FF50081B353 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8C027DD1FF50081B353 /* HomeScreenViewController.swift */; };
+		B46CB8C327DD2DAA0081B353 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8C227DD2DAA0081B353 /* SignUpViewController.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Extensions.swift"; sourceTree = "<group>"; };
 		B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		B46CB8BD27DD0C540081B353 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B46CB8C027DD1FF50081B353 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		B46CB8C227DD2DAA0081B353 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +212,8 @@
 				B46CB87627DBF54D0081B353 /* WelcomeScreenViewController.swift */,
 				B46CB8A827DC1ED50081B353 /* LoginViewController.swift */,
 				B46CB8BD27DD0C540081B353 /* CreateAccountViewController.swift */,
+				B46CB8C227DD2DAA0081B353 /* SignUpViewController.swift */,
+				B46CB8BF27DD1FC10081B353 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +244,14 @@
 				B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B46CB8BF27DD1FC10081B353 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B46CB8C027DD1FF50081B353 /* HomeScreenViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,10 +503,12 @@
 				B46CB8AE27DC231B0081B353 /* ProductsCellModel.swift in Sources */,
 				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
 				B46CB8B127DC24A30081B353 /* ProductsCollectionViewCell.swift in Sources */,
+				B46CB8C327DD2DAA0081B353 /* SignUpViewController.swift in Sources */,
 				B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */,
 				B46CB8A927DC1ED50081B353 /* LoginViewController.swift in Sources */,
 				B46CB8B627DC6E850081B353 /* ViewController+Extension.swift in Sources */,
 				B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */,
+				B46CB8C127DD1FF50081B353 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
