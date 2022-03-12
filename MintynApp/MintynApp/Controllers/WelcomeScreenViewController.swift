@@ -36,8 +36,8 @@ class WelcomeScreenViewController: UIViewController {
   }
   
   @IBAction func signUpButtonTapped(_ sender: UIButton) {
-    guard let signUpViewController = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else { return }
-    navigationController?.pushViewController(signUpViewController, animated: true)
+    guard let createAccountViewController = storyboard?.instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController else { return }
+    navigationController?.pushViewController(createAccountViewController, animated: true)
   }
   
   
