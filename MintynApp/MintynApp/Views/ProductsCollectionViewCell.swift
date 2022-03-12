@@ -15,6 +15,6 @@ class ProductsCollectionViewCell: UICollectionViewCell {
   func configureCell (with model: ProductsCellModel) {
       imageView.image = UIImage(systemName: model.image)
       serviceTitleLabel.text = model.title
-      
+      serviceTitleLabel.textColor = .white
   }
 }

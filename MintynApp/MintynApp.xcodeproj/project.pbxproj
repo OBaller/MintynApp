@@ -25,6 +25,9 @@
 		B46CB8AE27DC231B0081B353 /* ProductsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8AD27DC231B0081B353 /* ProductsCellModel.swift */; };
 		B46CB8B127DC24A30081B353 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */; };
 		B46CB8B427DC6BD00081B353 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */; };
+		B46CB8B627DC6E850081B353 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */; };
+		B46CB8B827DC77240081B353 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B727DC77240081B353 /* Constants.swift */; };
+		B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		B46CB8AD27DC231B0081B353 /* ProductsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCellModel.swift; sourceTree = "<group>"; };
 		B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		B46CB8B727DC77240081B353 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Extensions.swift"; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */,
+				B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */,
+				B46CB8B727DC77240081B353 /* Constants.swift */,
+				B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -468,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */,
 				B46CB8B427DC6BD00081B353 /* TextField+Extension.swift in Sources */,
+				B46CB8B827DC77240081B353 /* Constants.swift in Sources */,
 				B46CB8AB27DC1F130081B353 /* SignUpViewController.swift in Sources */,
 				B46CB87727DBF54D0081B353 /* WelcomeScreenViewController.swift in Sources */,
 				B46CB8AE27DC231B0081B353 /* ProductsCellModel.swift in Sources */,
@@ -476,6 +487,7 @@
 				B46CB8B127DC24A30081B353 /* ProductsCollectionViewCell.swift in Sources */,
 				B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */,
 				B46CB8A927DC1ED50081B353 /* LoginViewController.swift in Sources */,
+				B46CB8B627DC6E850081B353 /* ViewController+Extension.swift in Sources */,
 				B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

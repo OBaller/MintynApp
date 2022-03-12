@@ -13,8 +13,8 @@ struct ProductsCellModel {
 }
 
 let productsCellModels: [ProductsCellModel] = [
-  ProductsCellModel(title: "Mint Insurance", image: "checkerboard.shield"),
-  ProductsCellModel(title: "Open an account", image: "checkerboard.shield"),
-  ProductsCellModel(title: "CAC Business Registration", image: "doc.text"),
+  ProductsCellModel(title: "Mintyn Insurance", image: "checkerboard.shield"),
+  ProductsCellModel(title: "Open an Account", image: "checkerboard.shield"),
+  ProductsCellModel(title: "Register your business", image: "doc.text"),
   ProductsCellModel(title: "Contact Support", image: "person.fill.questionmark")
 ]
