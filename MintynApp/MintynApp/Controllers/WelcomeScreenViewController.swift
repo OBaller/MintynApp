@@ -31,12 +31,12 @@ class WelcomeScreenViewController: UIViewController {
   }
 
   
-  @IBAction func toLoginScreenTapped(_ sender: UIButton) {
+  @IBAction func loginButtonTapped(_ sender: UIButton) {
       guard let loginViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
       navigationController?.pushViewController(loginViewController, animated: true)
   }
   
-  @IBAction func toSignUpScreenTapped(_ sender: UIButton) {
+  @IBAction func signUpButtonTapped(_ sender: UIButton) {
       guard let signUpViewController = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else { return }
       navigationController?.pushViewController(signUpViewController, animated: true)
   }
