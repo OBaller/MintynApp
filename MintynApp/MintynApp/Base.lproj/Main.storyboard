@@ -1563,9 +1563,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mintAccTermsAndC" destination="u4E-gu-tZP" id="ft2-j8-veh"/>
-                        <outlet property="mintPrivacyPolicy" destination="noI-9B-6sK" id="St2-Ai-TrN"/>
-                        <outlet property="mintSavingGoalTermsAndC" destination="jhq-es-DRd" id="ShG-0O-fer"/>
+                        <outlet property="privacyPolicyLinkView" destination="noI-9B-6sK" id="St2-Ai-TrN"/>
+                        <outlet property="savingGoalTermsAndConditionsLinkView" destination="jhq-es-DRd" id="ShG-0O-fer"/>
+                        <outlet property="termsAndConditionLinkView" destination="u4E-gu-tZP" id="ft2-j8-veh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vly-eh-qSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

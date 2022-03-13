@@ -42,5 +42,8 @@ struct AppStringResource {
   public static let createBusinessAccountTitle = "Create Business Account"
   public static let logout = "Logout"
   
-  
+  // MARK: - Web Links String Resources
+  public static let termsAndConditionLink = "https://bankwithmint.com/privacy-policy"
+  public static let privacyLink = "https://bankwithmint.com/privacy-policy"
+  public static let savingsGoalLink = "https://bankwithmint.com/goal-based-savings"
 }
