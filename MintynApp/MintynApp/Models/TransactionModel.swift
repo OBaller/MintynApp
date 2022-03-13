@@ -15,10 +15,11 @@ struct TransactionModel {
 
 let transactionModel: [TransactionModel] = [
     TransactionModel(transactionIcon: "transferFunds", transactionTitle: "Transfer"),
-    TransactionModel(transactionIcon: "inflationIcon", transactionTitle: "Invest"),
+    TransactionModel(transactionIcon: "addIcon", transactionTitle: "Top Up"),
     TransactionModel(transactionIcon: "pay", transactionTitle: "Pay Bill"),
     TransactionModel(transactionIcon: "PiggyInvest", transactionTitle: "Save Money"),
-    TransactionModel(transactionIcon: "addIcon", transactionTitle: "Top Up"),
-    TransactionModel(transactionIcon: "fundIcon", transactionTitle: "Borrow"),
+    TransactionModel(transactionIcon: "inflationIcon", transactionTitle: "Invest /nInvest"),
+    TransactionModel(transactionIcon: "fundIcon", transactionTitle: "Loan"),
+    TransactionModel(transactionIcon: "piggyBank", transactionTitle: "Business Account"),
     TransactionModel(transactionIcon: "menu", transactionTitle: "More")
 ]

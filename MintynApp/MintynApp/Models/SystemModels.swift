@@ -8,11 +8,11 @@
 import Foundation
 
 struct SystemModels {
-    let title: String
+  let title: String
 }
 
 let systemModelData: [SystemModels] = [
-    SystemModels(title: "Default"),
-    SystemModels(title: "Light"),
-    SystemModels(title: "Dark")
+  SystemModels(title: "Default"),
+  SystemModels(title: "Light"),
+  SystemModels(title: "Dark")
 ]

@@ -11,6 +11,10 @@ enum Constants {
   
   enum AppColors {
       static let buttonGreen = UIColor(red: 0.1430310607, green: 0.3128267527, blue: 0.05865172297, alpha: 1)
-      
+  }
+  
+  enum AppImage {
+    static let notificationButton = UIImage(systemName: "bell.badge.fill")
+    static let mintynLogo = UIImage(systemName: "mintynLogo")
   }
 }

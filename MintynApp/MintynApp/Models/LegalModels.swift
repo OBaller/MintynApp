@@ -8,11 +8,11 @@
 import Foundation
 
 struct LegalModels {
-    let title: String
+  let title: String
 }
 
 let legalContentData: [LegalModels] = [
-    LegalModels(title: "Mint Account - Terms and Condition"),
-    LegalModels(title: "Privacy Policy"),
-    LegalModels(title: "Savings Goal - Terms and Condition")
+  LegalModels(title: "Mintyn Account - Terms and Conditions"),
+  LegalModels(title: "Mintyn Privacy Policy"),
+  LegalModels(title: "Savings Goal - Terms and Conditions")
 ]
