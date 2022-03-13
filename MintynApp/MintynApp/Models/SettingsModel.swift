@@ -6,20 +6,21 @@
 //
 
 import Foundation
+import UIKit
 
 struct SettingsModel {
-    let icon: String
-    let title: String
-    var profileSettings: [String]?
+  let icon: UIImage?
+  let title: String
+  var profileSettings: [String]?
 }
 
 let settingsData: [SettingsModel] = [
-    SettingsModel(icon: "person.fill", title: "Profile", profileSettings: ["   Personal Information", "   Employment Information", "   Identification Information", "   Next of kin"]),
-    SettingsModel(icon: "creditcard", title: "Account Management"),
-    SettingsModel(icon: "speaker.wave.2", title: "Refferals"),
-    SettingsModel(icon: "checkerboard.shield", title: "Legal"),
-    SettingsModel(icon: "square.and.pencil", title: "Help and Support"),
-    SettingsModel(icon: "doc.fill", title: "System"),
-    SettingsModel(icon: "arrow.triangle.2.circlepath", title: "Create Business Account"),
-    SettingsModel(icon: "rectangle.portrait.and.arrow.right", title: "Logout")
+  SettingsModel(icon: AppImage.profileAvatar, title: AppStringResource.profileTitle, profileSettings: [AppStringResource.profileSetting0, AppStringResource.profileSetting1, AppStringResource.profileSetting2, AppStringResource.profileSetting3]),
+  SettingsModel(icon: AppImage.creditCardIcon, title: AppStringResource.accountManagementTitle),
+  SettingsModel(icon: AppImage.speakerIcon, title: AppStringResource.referralsTitle),
+  SettingsModel(icon: AppImage.CheckerboardIcon, title: AppStringResource.legalTitle),
+  SettingsModel(icon: AppImage.squareAndPencilIcon, title: AppStringResource.helpAndSupportTitle),
+  SettingsModel(icon: AppImage.docIcon, title: AppStringResource.systemTitle),
+  SettingsModel(icon: AppImage.arrowTriangleIcon, title: AppStringResource.createBusinessAccountTitle),
+  SettingsModel(icon: AppImage.rectanglePortraitIcon, title: AppStringResource.logout)
 ]

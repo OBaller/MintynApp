@@ -13,8 +13,8 @@ class ProductsCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var comingSoonLabel: UILabel!
   
   func configureCell (with model: ProductsCellModel) {
-      imageView.image = UIImage(systemName: model.image)
-      serviceTitleLabel.text = model.title
-      serviceTitleLabel.textColor = .white
+    imageView.image = model.image
+    serviceTitleLabel.text = model.title
+    serviceTitleLabel.textColor = .white
   }
 }

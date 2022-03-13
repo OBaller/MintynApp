@@ -31,7 +31,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
-    cell.imageView?.image = UIImage(systemName: settingsData[indexPath.row].icon)
+    cell.imageView?.image = settingsData[indexPath.row].icon
     cell.imageView?.tintColor = .lightGray
     cell.textLabel?.text = settingsData[indexPath.row].title
     return cell

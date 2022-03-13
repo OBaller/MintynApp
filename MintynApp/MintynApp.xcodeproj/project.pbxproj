@@ -25,7 +25,6 @@
 		B46CB8B127DC24A30081B353 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */; };
 		B46CB8B427DC6BD00081B353 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */; };
 		B46CB8B627DC6E850081B353 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */; };
-		B46CB8B827DC77240081B353 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B727DC77240081B353 /* Constants.swift */; };
 		B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */; };
 		B46CB8BC27DD09EB0081B353 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */; };
 		B46CB8BE27DD0C540081B353 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8BD27DD0C540081B353 /* CreateAccountViewController.swift */; };
@@ -41,6 +40,10 @@
 		B46CB8D327DD36CB0081B353 /* SystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D227DD36CB0081B353 /* SystemModels.swift */; };
 		B46CB8D527DD37690081B353 /* HyperLink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */; };
 		B46CB8D727DD37E50081B353 /* ColorGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */; };
+		B46F672327DE13C2004005AF /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672227DE13C2004005AF /* AppFont.swift */; };
+		B46F672527DE141B004005AF /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672427DE141B004005AF /* AppColor.swift */; };
+		B46F672727DE149A004005AF /* AppStringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672627DE149A004005AF /* AppStringResource.swift */; };
+		B46F672927DE164D004005AF /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672827DE164D004005AF /* AppImage.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +93,6 @@
 		B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
-		B46CB8B727DC77240081B353 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Extensions.swift"; sourceTree = "<group>"; };
 		B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		B46CB8BD27DD0C540081B353 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,10 @@
 		B46CB8D227DD36CB0081B353 /* SystemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModels.swift; sourceTree = "<group>"; };
 		B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HyperLink+Extension.swift"; sourceTree = "<group>"; };
 		B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorGradient+Extensions.swift"; sourceTree = "<group>"; };
+		B46F672227DE13C2004005AF /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		B46F672427DE141B004005AF /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		B46F672627DE149A004005AF /* AppStringResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStringResource.swift; sourceTree = "<group>"; };
+		B46F672827DE164D004005AF /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -264,11 +270,11 @@
 			children = (
 				B46CB8B327DC6BD00081B353 /* TextField+Extension.swift */,
 				B46CB8B527DC6E850081B353 /* ViewController+Extension.swift */,
-				B46CB8B727DC77240081B353 /* Constants.swift */,
 				B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */,
 				B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */,
 				B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */,
 				B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */,
+				B46F672A27DE2B7B004005AF /* Helpers */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +288,17 @@
 				B46CB8C827DD34FD0081B353 /* LegalViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		B46F672A27DE2B7B004005AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B46F672227DE13C2004005AF /* AppFont.swift */,
+				B46F672427DE141B004005AF /* AppColor.swift */,
+				B46F672827DE164D004005AF /* AppImage.swift */,
+				B46F672627DE149A004005AF /* AppStringResource.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,14 +547,17 @@
 				B46CB8D727DD37E50081B353 /* ColorGradient+Extensions.swift in Sources */,
 				B46CB8D127DD36510081B353 /* LegalModels.swift in Sources */,
 				B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */,
+				B46F672727DE149A004005AF /* AppStringResource.swift in Sources */,
 				B46CB8B427DC6BD00081B353 /* TextField+Extension.swift in Sources */,
-				B46CB8B827DC77240081B353 /* Constants.swift in Sources */,
+				B46F672527DE141B004005AF /* AppColor.swift in Sources */,
 				B46CB87727DBF54D0081B353 /* WelcomeScreenViewController.swift in Sources */,
 				B46CB8C727DD34A80081B353 /* SystemViewController.swift in Sources */,
 				B46CB8BC27DD09EB0081B353 /* UIView+Extensions.swift in Sources */,
 				B46CB8AE27DC231B0081B353 /* ProductsCellModel.swift in Sources */,
 				B46CB8C527DD343D0081B353 /* SettingsViewController.swift in Sources */,
 				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
+				B46F672927DE164D004005AF /* AppImage.swift in Sources */,
+				B46F672327DE13C2004005AF /* AppFont.swift in Sources */,
 				B46CB8CF27DD360C0081B353 /* SettingsModel.swift in Sources */,
 				B46CB8D327DD36CB0081B353 /* SystemModels.swift in Sources */,
 				B46CB8C927DD34FD0081B353 /* LegalViewController.swift in Sources */,

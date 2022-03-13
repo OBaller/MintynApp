@@ -6,20 +6,21 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct TransactionModel {
-    let transactionIcon: String
-    let transactionTitle: String
+  let transactionIcon: UIImage?
+  let transactionTitle: String
 }
 
 let transactionModel: [TransactionModel] = [
-    TransactionModel(transactionIcon: "transferFunds", transactionTitle: "Transfer"),
-    TransactionModel(transactionIcon: "addIcon", transactionTitle: "Top Up"),
-    TransactionModel(transactionIcon: "pay", transactionTitle: "Pay Bill"),
-    TransactionModel(transactionIcon: "PiggyInvest", transactionTitle: "Save Money"),
-    TransactionModel(transactionIcon: "inflationIcon", transactionTitle: "Invest /nInvest"),
-    TransactionModel(transactionIcon: "fundIcon", transactionTitle: "Loan"),
-    TransactionModel(transactionIcon: "piggyBank", transactionTitle: "Business Account"),
-    TransactionModel(transactionIcon: "menu", transactionTitle: "More")
+  TransactionModel(transactionIcon: AppImage.transferFundsIcon, transactionTitle: AppStringResource.transferString),
+  TransactionModel(transactionIcon: AppImage.topUpIcon, transactionTitle: AppStringResource.topUpString),
+  TransactionModel(transactionIcon: AppImage.payBillIcon, transactionTitle: AppStringResource.payBillString),
+  TransactionModel(transactionIcon: AppImage.saveMoneyIcon, transactionTitle: AppStringResource.saveMoneyString),
+  TransactionModel(transactionIcon: AppImage.mintynInvestIcon, transactionTitle: AppStringResource.investString),
+  TransactionModel(transactionIcon: AppImage.loanIcon, transactionTitle: AppStringResource.loanString),
+  TransactionModel(transactionIcon: AppImage.businessAccountIcon, transactionTitle: AppStringResource.businessAccountString),
+  TransactionModel(transactionIcon: AppImage.mintynMenuIcon, transactionTitle: AppStringResource.moreString)
 ]

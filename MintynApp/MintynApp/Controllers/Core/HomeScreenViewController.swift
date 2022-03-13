@@ -9,7 +9,6 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
   @IBOutlet weak var copyButton: UIButton!
-  
   @IBOutlet weak var balanceViewWrapper: UIView!
   @IBOutlet weak var fundAccButton: UIButton!
   @IBOutlet weak var hideBalanceSwitch: UISwitch!
@@ -29,13 +28,14 @@ class HomeScreenViewController: UIViewController {
   }
   
   private func configureNavBar() {
-    navigationItem.leftBarButtonItem = UIBarButtonItem(image: Constants.AppImage.mintynLogo, style: .done, target: self, action: nil)
-    navigationItem.title = "MINTYN"
-      
-      navigationItem.rightBarButtonItem = UIBarButtonItem(image: Constants.AppImage.notificationButton, style: .done, target: self, action: nil)
-      
-      navigationController?.navigationBar.tintColor = .lightGray
-    }
+    var image = UIImage(named: "mintynBarButton")
+    image = image?.withRenderingMode(.alwaysOriginal)
+    navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+    
+    navigationItem.rightBarButtonItem = UIBarButtonItem(image: AppImage.notificationButton, style: .done, target: self, action: nil)
+    
+    navigationController?.navigationBar.tintColor = .lightGray
+  }
   
   private func setupHomeScreenStyles () {
     hideBalanceSwitch.transform = CGAffineTransform(scaleX: 0.65, y: 0.65)

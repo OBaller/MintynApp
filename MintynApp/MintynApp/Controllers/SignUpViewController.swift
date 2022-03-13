@@ -46,6 +46,8 @@ class SignUpViewController: UIViewController {
       self.emailTF.text = ""
       self.passwordTF.text = ""
     })
+    
+    
   }
   
   

@@ -6,15 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 struct ProductsCellModel {
   let title: String
-  let image: String
+  let image: UIImage?
 }
 
 let productsCellModels: [ProductsCellModel] = [
-  ProductsCellModel(title: "Mintyn Insurance", image: "checkerboard.shield"),
-  ProductsCellModel(title: "Open an Account", image: "checkerboard.shield"),
-  ProductsCellModel(title: "Register your business", image: "doc.text"),
-  ProductsCellModel(title: "Contact Support", image: "person.fill.questionmark")
+  ProductsCellModel(title: AppStringResource.mintynInsurance, image: AppImage.insuranceImage),
+  ProductsCellModel(title: AppStringResource.openAccount, image: AppImage.openAccountImage),
+  ProductsCellModel(title: AppStringResource.registerBusiness, image: AppImage.registerBusinessImage),
+  ProductsCellModel(title: AppStringResource.contactSupport, image: AppImage.supportImage)
 ]

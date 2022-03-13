@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var productsCollectionViewCell: UICollectionView!
   @IBOutlet weak var baseView: UIView!
   @IBOutlet weak var phoneNumberView: UIView!
-  @IBOutlet weak var phoneNumberTextField: UITextField!
+  @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordView: UIView!
   @IBOutlet weak var passwordTextField: PaddedTextField!
   @IBOutlet weak var checkBox: UIButton!
@@ -80,16 +80,16 @@ class LoginViewController: UIViewController {
   }
   
   private func loginButtonTapped () {
-    phoneNumberTextField.resignFirstResponder()
+    emailTextField.resignFirstResponder()
     passwordTextField.resignFirstResponder()
     
-    let email = phoneNumberTextField.text!, password = passwordTextField.text!
+    let email = emailTextField.text!, password = passwordTextField.text!
     if email.isEmpty || password.isEmpty {
       alertUserLoginError("Woops", "Fill all fields to log in")
     } else {
       
       userAuth.userLogin(with: email, and: password) {[weak self] result in
-        self?.phoneNumberTextField.text = ""
+        self?.emailTextField.text = ""
         self?.passwordTextField.text = ""
         result ? self?.toHomeScreen() :  self?.alertUserLoginError("Error", "\(self?.userAuth.appError?.localizedDescription ?? "Login Error")")
       }
@@ -152,7 +152,7 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 extension LoginViewController: UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    if textField == phoneNumberTextField {
+    if textField == emailTextField {
       passwordTextField.becomeFirstResponder()
     } else if textField == passwordTextField {
       loginButtonTapped()
