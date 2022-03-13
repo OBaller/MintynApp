@@ -20,12 +20,8 @@ class SettingsViewController: UIViewController {
 }
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
-  //    func numberOfSections(in tableView: UITableView) -> Int {
-  //        return settingsData.count
-  //    }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //        return settingsData[section].profileSettings?.count ?? 0
     return settingsData.count
   }
   
@@ -45,9 +41,9 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     tableView.deselectRow(at: indexPath, animated: true)
     switch indexPath.row {
       case  3:
-        toLegalsScreen()
+        navigateToLegalViewController()
       case 5:
-        toSystemScreen()
+        navToSystemViewController()
       case 7:
         logout()
       default:
@@ -55,14 +51,14 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
   }
   
-  private func toLegalsScreen () {
-    guard let legalControler = storyboard?.instantiateViewController(withIdentifier: "LegalViewController") as? LegalViewController else { return }
-    navigationController?.pushViewController(legalControler, animated: true)
+  private func navigateToLegalViewController () {
+    guard let legalViewControler = storyboard?.instantiateViewController(withIdentifier: "LegalViewController") as? LegalViewController else { return }
+    navigationController?.pushViewController(legalViewControler, animated: true)
   }
   
-  private func toSystemScreen () {
-    guard let legalControler = storyboard?.instantiateViewController(withIdentifier: "SystemViewCOntroller") as? SystemViewCOntroller else { return }
-    navigationController?.pushViewController(legalControler, animated: true)
+  private func navToSystemViewController () {
+    guard let systemViewController = storyboard?.instantiateViewController(withIdentifier: "SystemViewController") as? SystemViewController else { return }
+    navigationController?.pushViewController(systemViewController, animated: true)
   }
   
   private func alertUserLogoutError ( _ title: String, _ message: String) {

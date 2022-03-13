@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SystemViewCOntroller: UIViewController {
+class SystemViewController: UIViewController {
   @IBOutlet weak var systemTableView: UITableView!
   
   override func viewDidLoad() {
@@ -21,7 +21,7 @@ class SystemViewCOntroller: UIViewController {
   
 }
 
-extension SystemViewCOntroller: UITableViewDataSource, UITableViewDelegate {
+extension SystemViewController: UITableViewDataSource, UITableViewDelegate {
   
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1

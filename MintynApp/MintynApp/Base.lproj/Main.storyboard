@@ -1572,10 +1572,10 @@
             </objects>
             <point key="canvasLocation" x="1193" y="1647"/>
         </scene>
-        <!--System ViewC Ontroller-->
+        <!--System View Controller-->
         <scene sceneID="T7u-fu-3CV">
             <objects>
-                <viewController storyboardIdentifier="SystemViewCOntroller" id="1zt-YZ-dNf" customClass="SystemViewCOntroller" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SystemViewController" id="1zt-YZ-dNf" customClass="SystemViewController" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ds-gM-gnR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
