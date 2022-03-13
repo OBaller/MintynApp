@@ -795,6 +795,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.7337476611" green="0.55987638240000004" blue="0.2151634097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="K2V-eR-0yx" kind="relationship" relationship="viewControllers" id="KHA-jZ-kf7"/>
+                        <segue destination="SEK-bi-iGv" kind="relationship" relationship="viewControllers" id="rfM-qM-vuz"/>
+                        <segue destination="Uwt-Oj-JYC" kind="relationship" relationship="viewControllers" id="grV-vK-vKs"/>
+                        <segue destination="GW8-Qv-N5f" kind="relationship" relationship="viewControllers" id="f6f-lS-iYq"/>
+                        <segue destination="2yK-yG-ckt" kind="relationship" relationship="viewControllers" id="7vB-4H-OyR"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG7-Z8-w9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -803,7 +810,7 @@
         <!--Home Screen View Controller-->
         <scene sceneID="pSP-Pa-qIn">
             <objects>
-                <viewController id="JYe-lw-dVx" customClass="HomeScreenViewController" customModule="MintynDigitalBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JYe-lw-dVx" customClass="HomeScreenViewController" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K0a-WK-cYD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,7 +833,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U8H-sA-duh">
                                                                         <rect key="frame" x="0.0" y="0.0" width="207" height="47.5"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dee" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-D2-imc">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-D2-imc">
                                                                                 <rect key="frame" x="0.0" y="4" width="40" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="40" id="Eho-nU-KaS"/>
@@ -890,7 +897,7 @@
                                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="31" id="02C-oZ-CPg"/>
-                                                                            <constraint firstAttribute="width" constant="70" id="QcV-Xy-igx"/>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="QcV-Xy-igx"/>
                                                                         </constraints>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
@@ -910,7 +917,7 @@
                                                                         <rect key="frame" x="24" y="10" width="366" height="60"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yk5-oe-DPP">
-                                                                                <rect key="frame" x="0.0" y="4" width="157.5" height="52"/>
+                                                                                <rect key="frame" x="0.0" y="4" width="221.5" height="52"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjt-ba-Er9">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="17"/>
@@ -926,13 +933,6 @@
                                                                                     </label>
                                                                                 </subviews>
                                                                             </stackView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5p7-se-PId">
-                                                                                <rect key="frame" x="167.5" y="17.5" width="54" height="25"/>
-                                                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                                                <constraints>
-                                                                                    <constraint firstAttribute="height" constant="25" id="zpI-9Q-JkS"/>
-                                                                                </constraints>
-                                                                            </view>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjs-5m-Ufq">
                                                                                 <rect key="frame" x="231.5" y="12.5" width="134.5" height="35"/>
                                                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -952,7 +952,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                                <color key="backgroundColor" name="goldTint"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="HtS-68-afx" secondAttribute="bottom" constant="10" id="Eya-jV-DZC"/>
                                                                     <constraint firstAttribute="trailing" secondItem="HtS-68-afx" secondAttribute="trailing" constant="24" id="I7O-0N-pNJ"/>
@@ -1028,7 +1028,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-c2-nTm">
                                                         <rect key="frame" x="24" y="215" width="366" height="113"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ads-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="jKb-7K-2Ic">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appAdsImage" translatesAutoresizingMaskIntoConstraints="NO" id="jKb-7K-2Ic">
                                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="85"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="85" id="t6v-Na-6XN"/>
@@ -1053,7 +1053,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qqp-wT-Ntc">
                                                                 <rect key="frame" x="93" y="40.5" width="180.5" height="94.5"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invest" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-RJ-qhN">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deflationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-RJ-qhN">
                                                                         <rect key="frame" x="70" y="0.0" width="40" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="40" id="Fhf-1s-1zu"/>
@@ -1112,7 +1112,7 @@
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cST-es-bJd">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="163" height="35"/>
                                                                                         <subviews>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invest" translatesAutoresizingMaskIntoConstraints="NO" id="mvB-f3-sWI">
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deflationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mvB-f3-sWI">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="35" id="EFZ-z2-IlY"/>
@@ -1178,7 +1178,7 @@
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-N9-bEx">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="163" height="35"/>
                                                                                         <subviews>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy" translatesAutoresizingMaskIntoConstraints="NO" id="19P-Fw-kHB">
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggyBank" translatesAutoresizingMaskIntoConstraints="NO" id="19P-Fw-kHB">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                                                                 <constraints>
                                                                                                     <constraint firstAttribute="height" constant="35" id="211-U2-Do4"/>
@@ -1357,25 +1357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDQ-6u-fLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2129" y="720"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MQg-9S-Muc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IuQ-qZ-pd5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3e-Ad-MqD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JYe-lw-dVx" kind="relationship" relationship="rootViewController" id="GnH-g1-8f5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pPn-1B-R74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1159" y="720"/>
+            <point key="canvasLocation" x="2271" y="720"/>
         </scene>
         <!--Finance-->
         <scene sceneID="CGV-tj-LxJ">
@@ -1391,7 +1373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3a7-7a-HDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3339" y="1417"/>
+            <point key="canvasLocation" x="3693" y="1716"/>
         </scene>
         <!--Card-->
         <scene sceneID="cE1-yw-sKI">
@@ -1407,7 +1389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILQ-og-6VQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530" y="1588"/>
+            <point key="canvasLocation" x="2923" y="1716"/>
         </scene>
         <!--Support-->
         <scene sceneID="LtX-8w-iU2">
@@ -1423,34 +1405,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m99-Nh-lvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1571" y="1837"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="VNR-3Q-vO3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lC3-Ed-4cK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="Zxe-2V-Aet"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5JK-BH-UZ3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F74-1H-RZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-752" y="1837"/>
+            <point key="canvasLocation" x="-1362" y="1647"/>
         </scene>
         <!--Settings-->
         <scene sceneID="jMu-gb-TJD">
             <objects>
-                <viewController id="xQE-QS-09a" customClass="SettingsViewController" customModule="MintynDigitalBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xQE-QS-09a" customClass="SettingsViewController" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BgX-mZ-Cng">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GX0-CG-iag">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingsCell" textLabel="w1B-jU-EZa" imageView="U8t-4j-e81" rowHeight="76" style="IBUITableViewCellStyleDefault" id="YSr-1R-Jtt">
@@ -1495,12 +1461,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1X-og-2GB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="1837"/>
+            <point key="canvasLocation" x="420" y="1647"/>
         </scene>
         <!--Legal View Controller-->
         <scene sceneID="aAt-UD-iD5">
             <objects>
-                <viewController storyboardIdentifier="LegalViewController" id="Jgo-ld-pUJ" customClass="LegalViewController" customModule="MintynDigitalBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LegalViewController" id="Jgo-ld-pUJ" customClass="LegalViewController" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iwf-FK-eey">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1557,12 +1523,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vly-eh-qSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="1837"/>
+            <point key="canvasLocation" x="1193" y="1647"/>
         </scene>
         <!--System ViewC Ontroller-->
         <scene sceneID="T7u-fu-3CV">
             <objects>
-                <viewController storyboardIdentifier="SystemViewCOntroller" id="1zt-YZ-dNf" customClass="SystemViewCOntroller" customModule="MintynDigitalBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SystemViewCOntroller" id="1zt-YZ-dNf" customClass="SystemViewCOntroller" customModule="MintynApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ds-gM-gnR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1606,24 +1572,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idW-aS-IvI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762" y="1837"/>
+            <point key="canvasLocation" x="1968" y="1647"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="nIx-27-KIJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K2V-eR-0yx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Je3-vF-M7h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oi5-ap-S9f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JYe-lw-dVx" kind="relationship" relationship="rootViewController" id="pjB-nl-ha1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXm-Rn-VOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="720"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="n9P-iO-aJR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2yK-yG-ckt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="drO-YB-FPV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8tC-5i-pn7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xQE-QS-09a" kind="relationship" relationship="rootViewController" id="p9N-Gu-nut"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKM-w6-n2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="1647"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ads-removebg-preview" width="656" height="194"/>
+        <image name="appAdsImage" width="656" height="194"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
         <image name="building.columns" catalog="system" width="128" height="113"/>
         <image name="checkerboard.shield" catalog="system" width="128" height="121"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
-        <image name="dee" width="960" height="960"/>
+        <image name="deflationIcon" width="41" height="34"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="flag" width="612" height="398"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="invest" width="82" height="68"/>
         <image name="mintynLogo" width="60" height="93"/>
         <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
-        <image name="piggy" width="78" height="66"/>
+        <image name="piggyBank" width="39" height="33"/>
+        <image name="profileAvatar" width="187" height="213"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <namedColor name="goldTint">
             <color red="1" green="0.65098039215686276" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1639,9 +1642,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -34,6 +34,13 @@
 		B46CB8C527DD343D0081B353 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8C427DD343C0081B353 /* SettingsViewController.swift */; };
 		B46CB8C727DD34A80081B353 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8C627DD34A80081B353 /* SystemViewController.swift */; };
 		B46CB8C927DD34FD0081B353 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8C827DD34FD0081B353 /* LegalViewController.swift */; };
+		B46CB8CB27DD35900081B353 /* TransactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8CA27DD35900081B353 /* TransactionCollectionViewCell.swift */; };
+		B46CB8CD27DD35D80081B353 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8CC27DD35D80081B353 /* TransactionModel.swift */; };
+		B46CB8CF27DD360C0081B353 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8CE27DD360C0081B353 /* SettingsModel.swift */; };
+		B46CB8D127DD36510081B353 /* LegalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D027DD36510081B353 /* LegalModels.swift */; };
+		B46CB8D327DD36CB0081B353 /* SystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D227DD36CB0081B353 /* SystemModels.swift */; };
+		B46CB8D527DD37690081B353 /* HyperLink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */; };
+		B46CB8D727DD37E50081B353 /* ColorGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +99,13 @@
 		B46CB8C427DD343C0081B353 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B46CB8C627DD34A80081B353 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
 		B46CB8C827DD34FD0081B353 /* LegalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
+		B46CB8CA27DD35900081B353 /* TransactionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		B46CB8CC27DD35D80081B353 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		B46CB8CE27DD360C0081B353 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		B46CB8D027DD36510081B353 /* LegalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalModels.swift; sourceTree = "<group>"; };
+		B46CB8D227DD36CB0081B353 /* SystemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModels.swift; sourceTree = "<group>"; };
+		B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HyperLink+Extension.swift"; sourceTree = "<group>"; };
+		B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorGradient+Extensions.swift"; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -228,6 +242,10 @@
 			isa = PBXGroup;
 			children = (
 				B46CB8AD27DC231B0081B353 /* ProductsCellModel.swift */,
+				B46CB8CC27DD35D80081B353 /* TransactionModel.swift */,
+				B46CB8CE27DD360C0081B353 /* SettingsModel.swift */,
+				B46CB8D027DD36510081B353 /* LegalModels.swift */,
+				B46CB8D227DD36CB0081B353 /* SystemModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */,
+				B46CB8CA27DD35900081B353 /* TransactionCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +267,8 @@
 				B46CB8B727DC77240081B353 /* Constants.swift */,
 				B46CB8B927DCBDF80081B353 /* Validation+Extensions.swift */,
 				B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */,
+				B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */,
+				B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,7 +524,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46CB8CD27DD35D80081B353 /* TransactionModel.swift in Sources */,
+				B46CB8CB27DD35900081B353 /* TransactionCollectionViewCell.swift in Sources */,
 				B46CB8BE27DD0C540081B353 /* CreateAccountViewController.swift in Sources */,
+				B46CB8D727DD37E50081B353 /* ColorGradient+Extensions.swift in Sources */,
+				B46CB8D127DD36510081B353 /* LegalModels.swift in Sources */,
 				B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */,
 				B46CB8B427DC6BD00081B353 /* TextField+Extension.swift in Sources */,
 				B46CB8B827DC77240081B353 /* Constants.swift in Sources */,
@@ -513,9 +538,12 @@
 				B46CB8AE27DC231B0081B353 /* ProductsCellModel.swift in Sources */,
 				B46CB8C527DD343D0081B353 /* SettingsViewController.swift in Sources */,
 				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
+				B46CB8CF27DD360C0081B353 /* SettingsModel.swift in Sources */,
+				B46CB8D327DD36CB0081B353 /* SystemModels.swift in Sources */,
 				B46CB8C927DD34FD0081B353 /* LegalViewController.swift in Sources */,
 				B46CB8B127DC24A30081B353 /* ProductsCollectionViewCell.swift in Sources */,
 				B46CB8C327DD2DAA0081B353 /* SignUpViewController.swift in Sources */,
+				B46CB8D527DD37690081B353 /* HyperLink+Extension.swift in Sources */,
 				B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */,
 				B46CB8A927DC1ED50081B353 /* LoginViewController.swift in Sources */,
 				B46CB8B627DC6E850081B353 /* ViewController+Extension.swift in Sources */,

@@ -73,7 +73,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func logout () {
         logoutAuth.userLogOut {[weak self] logoutResult in
-            logoutResult ? self?.dismiss(animated: true, completion: nil) : self?.alertUserLogoutError("Woops", "\(self?.logoutAuth.errorHandler?.localizedDescription ?? "Can't log out")")
+            logoutResult ? self?.dismiss(animated: true, completion: nil) : self?.alertUserLogoutError("Woops", "\(self?.logoutAuth.appError?.localizedDescription ?? "Can't log out")")
         }
     }
     
