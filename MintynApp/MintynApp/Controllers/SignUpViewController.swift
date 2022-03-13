@@ -19,7 +19,6 @@ class SignUpViewController: UIViewController {
     passwordTF.isSecureTextEntry = true
   }
   
-  
   private func registerButtonTapped () {
     emailTF.resignFirstResponder()
     passwordTF.resignFirstResponder()
@@ -29,7 +28,7 @@ class SignUpViewController: UIViewController {
     }
     
     registerUserAuth.registerUser(with: email, and: password) { [weak self] result in
-      result ? self?.resgisterSuccessAlert() : self?.alertUserRegisterError("Error", "\(self?.registerUserAuth.appError?.localizedDescription ?? "Cannot register user")")
+      result ? self?.toHomeScreen() : self?.alertUserRegisterError("Error", "\(self?.registerUserAuth.appError?.localizedDescription ?? "Cannot register user")")
     }
   }
   
@@ -40,14 +39,19 @@ class SignUpViewController: UIViewController {
   }
   
   private func resgisterSuccessAlert () {
-    let alert = UIAlertController(title: "Success", message: "Account successfully created. Go back to login", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Success", message: "Account successfully created.", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
     present(alert, animated: true, completion: {
       self.emailTF.text = ""
       self.passwordTF.text = ""
     })
-    
-    
+  }
+  
+  private func toHomeScreen () {
+    resgisterSuccessAlert()
+    guard let homeScreenVC = storyboard?.instantiateViewController(withIdentifier: "baseTabBar") as? UITabBarController else { return }
+    homeScreenVC.modalPresentationStyle = .fullScreen
+    self.present(homeScreenVC, animated: true, completion: nil)
   }
   
   
