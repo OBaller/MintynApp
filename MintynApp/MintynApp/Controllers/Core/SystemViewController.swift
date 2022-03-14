@@ -36,12 +36,10 @@ extension SystemViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "systemCell", for: indexPath)
-    cell.textLabel?.text = systemModelData[indexPath.row].title
-    cell.imageView?.image = UIImage()
-    if indexPath.row == 0 {
-      cell.accessoryType = .checkmark
+    guard let cell = systemTableView.dequeueReusableCell(withIdentifier: "systemCell", for: indexPath) as? SystemTableViewCell else {
+      return UITableViewCell()
     }
+    cell.titleLabel.text = systemModelData[indexPath.row].title
     return cell
   }
   
@@ -50,16 +48,45 @@ extension SystemViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let totalRows = tableView.numberOfRows(inSection: 0)
+    for row in  0..<totalRows {
+      let indexPaths = IndexPath(row: row, section: 0)
+      let c = tableView.cellForRow(at: indexPaths) as! SystemTableViewCell
+      c.accessoryType = .none
+    }
+    
+    let cell = tableView.cellForRow(at: indexPath) as! SystemTableViewCell
+    
+    systemTableView.deselectRow(at: indexPath, animated: true)
+    cell.accessoryType = .checkmark
+    
     switch indexPath.row {
       case 1:
+        lightModeSupport()
         print("Light Mode Activated")
       case 2:
+        darkModeSupport()
         print("Dark Mode Activated")
         
       default:
+        neutralColorSupport()
         print("Default mode")
     }
+    
   }
   
+  func darkModeSupport() {
+    let window = UIApplication.shared.keyWindow
+    window?.overrideUserInterfaceStyle = .dark
+  }
   
+  func lightModeSupport() {
+    let window = UIApplication.shared.keyWindow
+    window?.overrideUserInterfaceStyle = .light
+  }
+  
+  func neutralColorSupport() {
+    let window = UIApplication.shared.keyWindow
+    window?.overrideUserInterfaceStyle = .unspecified
+  }
 }

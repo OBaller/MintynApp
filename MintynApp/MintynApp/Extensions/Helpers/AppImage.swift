@@ -37,6 +37,7 @@ struct AppImage {
   public static let docIcon = UIImage(systemName: "doc.fill")
   public static let arrowTriangleIcon = UIImage(systemName: "arrow.triangle.2.circlepath")
   public static let rectanglePortraitIcon = UIImage(systemName: "rectangle.portrait.and.arrow.right")
-
   
+  public static let checkImage = UIImage(systemName: "checkmark")
+
 }

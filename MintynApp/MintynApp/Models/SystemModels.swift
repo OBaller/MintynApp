@@ -13,7 +13,7 @@ struct SystemModels {
 
 let systemModelData: [SystemModels] = [
   SystemModels(title: "System"),
-  SystemModels(title: "Light"),
-  SystemModels(title: "Dark"),
-  SystemModels(title: "Auto")
+  SystemModels(title: "Light Mode"),
+  SystemModels(title: "Dark Mode"),
+  SystemModels(title: "Auto Battery")
 ]

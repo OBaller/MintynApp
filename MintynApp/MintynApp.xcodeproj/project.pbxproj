@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D9E43F72F554DBF4BCE8685 /* Pods_MintynApp_MintynAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3274087DC67F17743D166B40 /* Pods_MintynApp_MintynAppUITests.framework */; };
 		6B95CC6A5D919090E480633D /* Pods_MintynAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */; };
+		B41602DB27DEBC8A00A07052 /* UIApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41602DA27DEBC8A00A07052 /* UIApp+Extension.swift */; };
 		B46CB87327DBF54D0081B353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87227DBF54D0081B353 /* AppDelegate.swift */; };
 		B46CB87527DBF54D0081B353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87427DBF54D0081B353 /* SceneDelegate.swift */; };
 		B46CB87727DBF54D0081B353 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB87627DBF54D0081B353 /* WelcomeScreenViewController.swift */; };
@@ -44,6 +45,7 @@
 		B46F672527DE141B004005AF /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672427DE141B004005AF /* AppColor.swift */; };
 		B46F672727DE149A004005AF /* AppStringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672627DE149A004005AF /* AppStringResource.swift */; };
 		B46F672927DE164D004005AF /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672827DE164D004005AF /* AppImage.swift */; };
+		B46F672C27DEA047004005AF /* SystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F672B27DEA047004005AF /* SystemTableViewCell.swift */; };
 		D02CC345F7955F43962A35B9 /* Pods_MintynApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,7 @@
 		7143725D332EB058A0949B24 /* Pods_MintynAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7424FA3CDE146BD0D180BCF5 /* Pods-MintynApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynApp.release.xcconfig"; path = "Target Support Files/Pods-MintynApp/Pods-MintynApp.release.xcconfig"; sourceTree = "<group>"; };
 		762D5289D7CB2952A1F61D71 /* Pods-MintynAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintynAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MintynAppTests/Pods-MintynAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B41602DA27DEBC8A00A07052 /* UIApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApp+Extension.swift"; sourceTree = "<group>"; };
 		B46CB86F27DBF54D0081B353 /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB87227DBF54D0081B353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CB87427DBF54D0081B353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		B46F672427DE141B004005AF /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B46F672627DE149A004005AF /* AppStringResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStringResource.swift; sourceTree = "<group>"; };
 		B46F672827DE164D004005AF /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		B46F672B27DEA047004005AF /* SystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTableViewCell.swift; sourceTree = "<group>"; };
 		D4B6A884501D676884298DC3 /* Pods_MintynApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintynApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -261,6 +265,7 @@
 			children = (
 				B46CB8B027DC24A30081B353 /* ProductsCollectionViewCell.swift */,
 				B46CB8CA27DD35900081B353 /* TransactionCollectionViewCell.swift */,
+				B46F672B27DEA047004005AF /* SystemTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				B46CB8BB27DD09EB0081B353 /* UIView+Extensions.swift */,
 				B46CB8D427DD37690081B353 /* HyperLink+Extension.swift */,
 				B46CB8D627DD37E50081B353 /* ColorGradient+Extensions.swift */,
+				B41602DA27DEBC8A00A07052 /* UIApp+Extension.swift */,
 				B46F672A27DE2B7B004005AF /* Helpers */,
 			);
 			path = Extensions;
@@ -544,6 +550,7 @@
 				B46CB8CD27DD35D80081B353 /* TransactionModel.swift in Sources */,
 				B46CB8CB27DD35900081B353 /* TransactionCollectionViewCell.swift in Sources */,
 				B46CB8BE27DD0C540081B353 /* CreateAccountViewController.swift in Sources */,
+				B41602DB27DEBC8A00A07052 /* UIApp+Extension.swift in Sources */,
 				B46CB8D727DD37E50081B353 /* ColorGradient+Extensions.swift in Sources */,
 				B46CB8D127DD36510081B353 /* LegalModels.swift in Sources */,
 				B46CB8BA27DCBDF90081B353 /* Validation+Extensions.swift in Sources */,
@@ -558,6 +565,7 @@
 				B46CB8A627DC0C8C0081B353 /* AuthManager.swift in Sources */,
 				B46F672927DE164D004005AF /* AppImage.swift in Sources */,
 				B46F672327DE13C2004005AF /* AppFont.swift in Sources */,
+				B46F672C27DEA047004005AF /* SystemTableViewCell.swift in Sources */,
 				B46CB8CF27DD360C0081B353 /* SettingsModel.swift in Sources */,
 				B46CB8D327DD36CB0081B353 /* SystemModels.swift in Sources */,
 				B46CB8C927DD34FD0081B353 /* LegalViewController.swift in Sources */,
