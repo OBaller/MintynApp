@@ -48,7 +48,6 @@ class SignUpViewController: UIViewController {
   }
   
   private func toHomeScreen () {
-    resgisterSuccessAlert()
     guard let homeScreenVC = storyboard?.instantiateViewController(withIdentifier: "baseTabBar") as? UITabBarController else { return }
     homeScreenVC.modalPresentationStyle = .fullScreen
     self.present(homeScreenVC, animated: true, completion: nil)
