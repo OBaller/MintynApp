@@ -67,7 +67,6 @@ extension SystemViewController: UITableViewDataSource, UITableViewDelegate {
       case 2:
         darkModeSupport()
         print("Dark Mode Activated")
-        
       default:
         neutralColorSupport()
         print("Default mode")
@@ -75,6 +74,7 @@ extension SystemViewController: UITableViewDataSource, UITableViewDelegate {
     
   }
   
+  // MARK: - Color Scheme Support
   func darkModeSupport() {
     let window = UIApplication.shared.keyWindow
     window?.overrideUserInterfaceStyle = .dark

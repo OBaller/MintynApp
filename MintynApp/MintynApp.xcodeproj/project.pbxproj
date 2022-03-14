@@ -170,6 +170,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B41602DC27DEC1F500A07052 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B46CB87227DBF54D0081B353 /* AppDelegate.swift */,
+				B46CB87427DBF54D0081B353 /* SceneDelegate.swift */,
+				B46CB87B27DBF5550081B353 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B41602DD27DEC23600A07052 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B46CB87827DBF54D0081B353 /* Main.storyboard */,
+				B46CB87D27DBF5550081B353 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B46CB86627DBF54D0081B353 = {
 			isa = PBXGroup;
 			children = (
@@ -195,17 +214,14 @@
 		B46CB87127DBF54D0081B353 /* MintynApp */ = {
 			isa = PBXGroup;
 			children = (
+				B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */,
 				B46CB8B227DC6AFC0081B353 /* Extensions */,
 				B46CB8AF27DC24270081B353 /* Views */,
 				B46CB8AC27DC22790081B353 /* Models */,
 				B46CB8A427DC0C580081B353 /* Manager */,
-				B46CB8A227DBFCDC0081B353 /* GoogleService-Info.plist */,
-				B46CB87227DBF54D0081B353 /* AppDelegate.swift */,
-				B46CB87427DBF54D0081B353 /* SceneDelegate.swift */,
+				B41602DC27DEC1F500A07052 /* Resources */,
 				B46CB8A727DC1EAE0081B353 /* Controllers */,
-				B46CB87827DBF54D0081B353 /* Main.storyboard */,
-				B46CB87B27DBF5550081B353 /* Assets.xcassets */,
-				B46CB87D27DBF5550081B353 /* LaunchScreen.storyboard */,
+				B41602DD27DEC23600A07052 /* Storyboards */,
 				B46CB88027DBF5550081B353 /* Info.plist */,
 			);
 			path = MintynApp;

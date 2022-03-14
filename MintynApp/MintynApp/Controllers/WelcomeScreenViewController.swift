@@ -40,5 +40,4 @@ class WelcomeScreenViewController: UIViewController {
     navigationController?.pushViewController(signUpViewController, animated: true)
   }
   
-  
 }

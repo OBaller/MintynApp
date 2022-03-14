@@ -46,7 +46,7 @@ class HomeScreenViewController: UIViewController {
   }
   
   private func balanceBGGradientColour () {
-    // Fix gradient
+    
   }
   
   private let floatingButton: UIButton = {
